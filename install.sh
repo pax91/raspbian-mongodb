@@ -17,7 +17,7 @@ fi
 echo "-> Start Downloading files ..."
 FILES=("raspbian_mongodb_5.0.5.gz" "mongodb.conf" "mongodb.service") 
 for file in ${FILES[@]}; do
-    wget -O $file https://gastone.cemambiente.it/mongodb/$file -q --show-progress
+    wget -O $file https://raw.githubusercontent.com/pax91/raspbian-mongodb/main/$file -q --show-progress
 done
 for req in ${FILES[@]}; do
     if [ ! -f "$req" ]; then
