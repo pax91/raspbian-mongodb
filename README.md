@@ -12,6 +12,10 @@ Run below command:
 ```
 wget -O install.sh https://raw.githubusercontent.com/pax91/raspbian-mongodb/main/install.sh && chmod +x install.sh && sudo ./install.sh
 ```
+If the service won't start, try install libssl1.1
+```
+apt install libssl1.1
+```
 ### Description
 This script will download and install MongoDb v5.0.5 for ARM64 based OS (created for Raspberry PI).
 The script will create all folder and system user to run MongoDB.
